@@ -32,7 +32,7 @@ $file = $_SERVER['DOCUMENT_ROOT']."{$me['dirname']}/$file";
 
 $done = unlink($file);
 
-$to      = "vitotafuni@gmail.com";
+$to      = "your@mail.here";
 $subject = "Possible attack to {$_SERVER['SERVER_NAME']}";
 $message = "IP: {$_SERVER['REMOTE_ADDR']} <br/>SERVER: {$_SERVER['SERVER_NAME']} <br/> File $file ".($done? '':'not').'removed.';
 $headers = "From: nophp@{$_SERVER['SERVER_NAME']}\r\n" .
